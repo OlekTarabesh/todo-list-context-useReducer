@@ -1,0 +1,97 @@
+.container {
+    width: 100%;
+    height: 58px;
+    display: grid;
+    margin: 0 0 25px 0;
+}
+
+.inputAndButton {
+    width: 90%;
+    height: 58px;
+    display: grid;
+    grid-template-columns: 1fr 148px;
+    place-self: center;
+}
+
+.input {
+    width: 100%;
+    border: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    text-indent: 20px;
+    outline: none;
+}
+
+.inputButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: linear-gradient(82.87deg, #07FDFD -2.81%, #4D69FE 43.36%, #CC00FF 95.68%);
+    cursor: pointer;
+}
+
+.addPlus {
+    display: none;
+    width: 30px;
+    height: auto;
+    /* font-size: 16px; */
+}
+
+.inputButton:hover {
+    color: #ffffff;
+}
+
+.error {
+    width: 100%;
+    height: 58px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 148px;
+    place-self: center;
+    border: 2px solid red;
+    border-right: none;
+    outline: none;
+    text-indent: 20px;
+}
+
+.error::placeholder {
+    color: red;
+    text-indent: 20px;
+}
+
+.inputButtonError {
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: linear-gradient(82.87deg, #07FDFD -2.81%, #4D69FE 43.36%, #CC00FF 95.68%);
+    cursor: pointer;
+    border: 2px solid red;
+    border-left: none;
+}
+
+.errorMassage {
+    width: 100%;
+    height: 26px;
+    margin: 0 0 0 10px;
+    display: flex;
+    grid-template-columns: 1fr 148px;
+    color: red;
+}
+
+@media screen and (max-width: 481px) {
+    .inputAndButton {
+        grid-template-columns: 1fr 48px;
+    }
+
+    .addBtn {
+        display: none;
+    }
+    
+    .addPlus {
+        display: inline;
+    }
+}
